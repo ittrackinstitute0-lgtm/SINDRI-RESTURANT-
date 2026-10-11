@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sindri Restaurant | Authentic Flavors of Royal Pakistan | سندھڑی ریستوران</title>
+  
+  <!-- Favicon / Brand Icon -->
+  <link rel="icon" type="image/png" href="assets/images/entrance_hero.png">
+
+  <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, Amiri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="pattern-overlay">
+
+  <!-- =========================================================================
+       SITE HEADER / NAVIGATION
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar">
+      <!-- Brand Identity -->
+      <a href="#hero" class="brand-logo">
+        <div class="logo-crest">
+          <span>S</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Sindri</span>
+          <span class="logo-sub">Restaurant • پاکستان</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link active">Entrance</a></li>
+          <li><a href="#welcome-ritual" class="nav-link">Welcome Ritual</a></li>
+          <li><a href="#menu" class="nav-link">Royal Menu</a></li>
+          <li><a href="#heritage" class="nav-link">Our Heritage</a></li>
+          <li><a href="#ambience" class="nav-link">Dastarkhwan</a></li>
+          <li><a href="#reservation" class="nav-link">Reservations</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Items -->
+      <div class="nav-actions">
+        <!-- Cart Drawer Toggle -->
+        <button class="cart-icon-btn" id="cartIconBtn" title="View Dastarkhwan Order">
+          <i class="fa-solid fa-utensils"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+
+        <!-- Book Table Caramel CTA -->
+        <a href="#reservation" class="btn btn-caramel btn-sm d-none-sm">
+          <i class="fa-solid fa-calendar-check"></i> Book Table
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       ENTRANCE / HERO SECTION (FEATURING USER'S TEA & BISCUITS IMAGE)
+       ========================================================================= -->
+  <section class="hero-entrance" id="hero">
+    <!-- Ambient Blur Background Elements -->
+    <div class="hero-background-decor">
+      <div class="hero-decor-circle hero-decor-1"></div>
+      <div class="hero-decor-circle hero-decor-2"></div>
+    </div>
+
+    <div class="container hero-grid">
+      <!-- Left Column: Regally Crafted Copy -->
+      <div class="hero-content reveal-item-left">
+        <div class="hero-entrance-tag">
+          <span class="pulse-dot"></span>
+          <span>Authentic Pakistani Hospitality</span>
+          <span class="badge-dusty-pink">
+            <i class="fa-solid fa-award"></i> Estd. 1984
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="urdu-title">خوش آمدید • سندھڑی ریستوران</span>
+          Where Royal Heritage Meets the Soul of <span class="gold-highlight">Pakistan</span>.
+        </h1>
+
+        <p class="hero-description">
+          Step into our majestic dawat. From our arrival ritual of piping-hot <strong>Karak Elaichi Chai with handmade leaf biscuits</strong> to overnight slow-simmered <strong>Nalli Nihari</strong> and smoky <strong>Koyla Karahi</strong>, savor the true culinary jewels of Sindh, Punjab, Khyber, and Balochistan.
+        </p>
+
+        <!-- Highlight Badges -->
+        <div class="hero-highlights-list">
+          <div class="hero-highlight-pill">
+            <i class="fa-solid fa-fire-burner"></i> Earthen Handi Cooking
+          </div>
+          <div class="hero-highlight-pill">
+            <i class="fa-solid fa-leaf"></i> 100% Halal & Pure Desi Ghee
+          </div>
+          <div class="hero-highlight-pill">
+            <i class="fa-solid fa-clock"></i> 12-Hour Overnight Dum
+          </div>
+        </div>
+
+        <!-- Call to Actions (Caramel Buttons) -->
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-caramel btn-lg glow-caramel">
+            <i class="fa-solid fa-bowl-rice"></i> Explore Royal Menu
+          </a>
+          <a href="#welcome-ritual" class="btn btn-caramel-outline btn-lg">
+            <i class="fa-solid fa-mug-hot"></i> Entrance Tea Ritual
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Prominent Entrance Image Frame with Micro-Animations -->
+      <div class="hero-visual-wrapper reveal-item-right">
+        <!-- Floating Rotating Seal Badge -->
+        <div class="heritage-seal">
+          <span class="seal-top">Royal</span>
+          <span class="seal-mid">Sindri</span>
+          <span class="seal-bot">100% Pure</span>
+        </div>
+
+        <div class="hero-entrance-card ancient-gold-border">
+          <div class="hero-img-box">
+            <!-- USER'S ENTRANCE IMAGE -->
+            <img src="assets/images/entrance_hero.png" alt="Sindri Restaurant Royal Entrance - Elaichi Chai and Handmade Leaf Biscuits" id="entranceHeroImage">
+
+            <!-- Steam rising animation over the hot chai cup -->
+            <div class="steam-emitter" aria-hidden="true">
+              <div class="steam-particle"></div>
+              <div class="steam-particle"></div>
+              <div class="steam-particle"></div>
+              <div class="steam-particle"></div>
+            </div>
+          </div>
+
+          <!-- Floating Info Badges (Dusty Pink & Gold Accents) -->
+          <div class="floating-badge badge-top-left">
+            <div class="floating-icon-crest">
+              <i class="fa-solid fa-mug-saucer"></i>
+            </div>
+            <div class="floating-badge-text">
+              <h4>Welcome Dawat</h4>
+              <p>Cardamom Tea & Fresh Baked Biscuits</p>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-right">
+            <div class="floating-icon-crest">
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="floating-badge-text">
+              <h4>4.9 / 5.0 Rating</h4>
+              <p>Over 14,000+ Delighted Guests</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       QUICK STATS COUNTER BANNER
+       ========================================================================= -->
+  <section class="stats-banner">
+    <div class="container stats-grid">
+      <div class="stat-item reveal-item delay-1">
+        <div class="stat-number">40<span class="plus">+</span></div>
+        <div class="stat-label">Authentic Dishes</div>
+      </div>
+      <div class="stat-item reveal-item delay-2">
+        <div class="stat-number">100<span class="plus">%</span></div>
+        <div class="stat-label">Pure Desi Ghee & Spices</div>
+      </div>
+      <div class="stat-item reveal-item delay-3">
+        <div class="stat-number">38<span class="plus">+</span></div>
+        <div class="stat-label">Years of Heritage</div>
+      </div>
+      <div class="stat-item reveal-item delay-4">
+        <div class="stat-number">12<span class="plus">h</span></div>
+        <div class="stat-label">Slow Cooked Nihari & Haleem</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ENTRANCE HOSPITALITY SPOTLIGHT: THE CHAI & BISCUIT RITUAL
+       ========================================================================= -->
+  <section class="section-padding entrance-story-section" id="welcome-ritual">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="subtitle">A Sacred Pakistani Custom</span>
+        <h2 class="title">The Sindri Entrance Welcome Ritual</h2>
+        <div class="ornament-divider">
+          <span class="line"></span>
+          <span class="diamond"></span>
+          <span class="icon"><i class="fa-solid fa-mug-hot"></i></span>
+          <span class="diamond"></span>
+          <span class="line"></span>
+        </div>
+        <p class="description">
+          In Pakistani culture, no honored guest crosses a threshold without being welcomed with steaming hot tea and fresh oven-baked treats. At Sindri Restaurant, your journey begins the moment you arrive.
+        </p>
+      </div>
+
+      <div class="ritual-card reveal-item-scale">
+        <div class="ritual-image-frame">
+          <img src="assets/images/entrance_hero.png" alt="Royal Karak Doodh Patti and Leaf Biscuits">
+          <div class="ritual-price-tag">
+            <span>Special Platter: </span>
+            <span class="pkr">Rs. 480</span>
+          </div>
+        </div>
+
+        <div class="ritual-details">
+          <span class="badge-dusty-pink">
+            <i class="fa-solid fa-heart"></i> Complimentary Upon Grand Table Reservation
+          </span>
+          <h3>Karak Doodh Patti & Cardamom Leaf Biscuits</h3>
+          <p class="urdu-text">روایتی کڑک دودھ پتی اور تازہ دستکاری بسکٹ</p>
+          <p>
+            Brewed slowly with rich buffalo milk, crushed green cardamom pods, and Ceylon whole-leaf tea, strained to silky perfection. Paired with our pastry chefs' signature hand-scored cardamom butter leaf biscuits, golden-baked to melt gently on your tongue.
+          </p>
+
+          <div class="ritual-features">
+            <div class="ritual-feature-item">
+              <div class="ritual-feature-icon">
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+              <div class="ritual-feature-text">
+                <h5>Pure Buffalo Milk</h5>
+                <p>Simmered thick without water</p>
+              </div>
+            </div>
+            <div class="ritual-feature-item">
+              <div class="ritual-feature-icon">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <div class="ritual-feature-text">
+                <h5>Green Cardamom</h5>
+                <p>Freshly pestle-crushed pods</p>
+              </div>
+            </div>
+            <div class="ritual-feature-item">
+              <div class="ritual-feature-icon">
+                <i class="fa-solid fa-cookie"></i>
+              </div>
+              <div class="ritual-feature-text">
+                <h5>Oven-Warm Biscuits</h5>
+                <p>Butter & almond flour recipe</p>
+              </div>
+            </div>
+            <div class="ritual-feature-item">
+              <div class="ritual-feature-icon">
+                <i class="fa-solid fa-crown"></i>
+              </div>
+              <div class="ritual-feature-text">
+                <h5>Royal Presentation</h5>
+                <p>Fine porcelain & antique gold trims</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-caramel" id="welcomeChaiOrderBtn">
+            <i class="fa-solid fa-plus"></i> Add Welcome Chai Platter (Rs. 480)
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ROYAL PAKISTANI MENU SECTION (FILTERABLE & ACCURATE PKR PRICING)
+       ========================================================================= -->
+  <section class="section-padding menu-section" id="menu">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="subtitle">Authentic Dastarkhwan Selection</span>
+        <h2 class="title">The Flavors of Pakistan</h2>
+        <div class="ornament-divider">
+          <span class="line"></span>
+          <span class="diamond"></span>
+          <span class="icon"><i class="fa-solid fa-utensils"></i></span>
+          <span class="diamond"></span>
+          <span class="line"></span>
+        </div>
+        <p class="description">
+          Every recipe has been perfected through generations. Prepared with unadulterated stone-ground spices, pure desi ghee, and time-honored cooking methods. All prices are in Pakistani Rupees (PKR).
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="menu-filter-nav reveal-item">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fa-solid fa-bowl-food"></i> All Dishes
+        </button>
+        <button class="filter-btn" data-filter="signature">
+          <i class="fa-solid fa-crown"></i> Dastarkhwan Signatures
+        </button>
+        <button class="filter-btn" data-filter="karahi">
+          <i class="fa-solid fa-fire"></i> Karahi & Handi
+        </button>
+        <button class="filter-btn" data-filter="bbq">
+          <i class="fa-solid fa-drumstick-bite"></i> BBQ & Grills
+        </button>
+        <button class="filter-btn" data-filter="tandoor">
+          <i class="fa-solid fa-bread-slice"></i> Tandoor & Breads
+        </button>
+        <button class="filter-btn" data-filter="beverages">
+          <i class="fa-solid fa-mug-hot"></i> Chai & Beverages
+        </button>
+        <button class="filter-btn" data-filter="desserts">
+          <i class="fa-solid fa-ice-cream"></i> Shahi Desserts
+        </button>
+      </div>
+
+      <!-- Dynamic Menu Card Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Injected via js/main.js with rich details and animations -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CULINARY HERITAGE & COOKING SECRETS
+       ========================================================================= -->
+  <section class="section-padding heritage-section" id="heritage">
+    <div class="container heritage-grid">
+      <div class="heritage-card-frame reveal-item-left">
+        <img src="assets/images/biryani.jpg" alt="Authentic Sindhi Biryani Dum" class="heritage-img-main">
+        <div class="heritage-overlap-card">
+          <span class="badge-dusty-pink">Culinary Secret</span>
+          <h4>The Dum Pukht Method</h4>
+          <p>
+            Cooking in heavy sealed vessels over dying charcoal embers allows the natural meats and aromatics to tenderize in their own steam.
+          </p>
+        </div>
+      </div>
+
+      <div class="heritage-content reveal-item-right">
+        <span class="badge-dusty-pink">Our Culinary Philosophy</span>
+        <h2 style="font-size: 2.4rem; margin: 12px 0 16px;">The Royal Soul of Sindri</h2>
+        <p class="urdu-text">پاکستانی کھانوں کی اصل خوشبو اور لازوال روایات</p>
+        <p style="margin-bottom: 20px;">
+          At Sindri Restaurant, we do not take shortcuts. We believe that genuine Pakistani food is an art of patience and respect. Spices are hand-ground in stone mortars every morning, and our broths are simmered with whole bones, marrow, and whole spices until every spoonful is liquid gold.
+        </p>
+
+        <div class="heritage-pillars">
+          <div class="pillar-item">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-mortar-pestle"></i>
+            </div>
+            <h4>Stone-Ground Spices</h4>
+            <p>Whole cloves, black cumin, star anise, and cinnamon freshly milled daily.</p>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+            <h4>Wood & Charcoal Embers</h4>
+            <p>Authentic sigris and clay tandoors giving that unmistakable smoky flavor.</p>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h4>100% Halal Meat</h4>
+            <p>Certified farm-fresh mutton, beef, and free-range poultry.</p>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon">
+              <i class="fa-solid fa-jar"></i>
+            </div>
+            <h4>Pure Desi Ghee</h4>
+            <p>Churned cow and buffalo butter that enhances aroma and digestion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       ROYAL AMBIENCE & DASTARKHWAN SEATING
+       ========================================================================= -->
+  <section class="section-padding ambience-section" id="ambience">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="subtitle">Experience Royal Hospitality</span>
+        <h2 class="title">The Ambience of Royalty</h2>
+        <div class="ornament-divider">
+          <span class="line"></span>
+          <span class="diamond"></span>
+          <span class="icon"><i class="fa-solid fa-couch"></i></span>
+          <span class="diamond"></span>
+          <span class="line"></span>
+        </div>
+        <p class="description">
+          Whether you prefer traditional floor cushion Dastarkhwan seating for large family feasts or a secluded private Mughal pavilion, Sindri provides warmth and majesty.
+        </p>
+      </div>
+
+      <div class="ambience-banner reveal-item-scale">
+        <img src="assets/images/ambience.jpg" alt="Sindri Restaurant Luxury Dining Hall & Ambience">
+        <div class="ambience-overlay">
+          <span class="badge-dusty-pink" style="width: fit-content; margin-bottom: 12px;">
+            <i class="fa-solid fa-location-dot"></i> Luxury Dining Hall
+          </span>
+          <h3>Step Into a Living Mughal Dawat</h3>
+          <p>
+            Adorned with intricate brass lanterns, hand-carved teak woodwork, soft Kashmiri carpets, and the gentle fragrance of burning agarwood and roasted spices.
+          </p>
+          <div class="ambience-features-strip">
+            <div class="ambience-feature-tag">
+              <i class="fa-solid fa-users"></i> Family Majlis Available
+            </div>
+            <div class="ambience-feature-tag">
+              <i class="fa-solid fa-music"></i> Live Sufi Instrumental Evenings
+            </div>
+            <div class="ambience-feature-tag">
+              <i class="fa-solid fa-car"></i> Valet Parking & Prayer Area
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       INTERACTIVE TABLE RESERVATION SECTION
+       ========================================================================= -->
+  <section class="section-padding reservation-section" id="reservation">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="subtitle">Reserve Your Table</span>
+        <h2 class="title">Join Us at the Dastarkhwan</h2>
+        <div class="ornament-divider">
+          <span class="line"></span>
+          <span class="diamond"></span>
+          <span class="icon"><i class="fa-solid fa-calendar-check"></i></span>
+          <span class="diamond"></span>
+          <span class="line"></span>
+        </div>
+        <p class="description">
+          Reserve your table in advance. Special arrangements available for corporate gatherings, family celebrations, and authentic Dastarkhwan feasts.
+        </p>
+      </div>
+
+      <div class="reservation-box reveal-item">
+        <form id="reservationForm">
+          <div class="reservation-form-grid">
+            <div class="form-group">
+              <label for="resName" class="form-label">
+                <i class="fa-solid fa-user" style="color: var(--ancient-gold);"></i> Full Name
+              </label>
+              <input type="text" id="resName" class="form-control" placeholder="e.g. Tariq Khan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="resPhone" class="form-label">
+                <i class="fa-solid fa-phone" style="color: var(--ancient-gold);"></i> Phone Number (PK)
+              </label>
+              <input type="tel" id="resPhone" class="form-control" placeholder="+92 300 1234567" required>
+            </div>
+
+            <div class="form-group">
+              <label for="resGuests" class="form-label">
+                <i class="fa-solid fa-users" style="color: var(--ancient-gold);"></i> Number of Guests
+              </label>
+              <select id="resGuests" class="form-control" required>
+                <option value="2 Guests (Intimate Dining)">2 Guests (Intimate Dining)</option>
+                <option value="4 Guests (Family Table)">4 Guests (Family Table)</option>
+                <option value="6 Guests (Dastarkhwan)">6 Guests (Dastarkhwan)</option>
+                <option value="8 Guests (Royal Table)">8 Guests (Royal Table)</option>
+                <option value="10-15 Guests (Grand Majlis)">10-15 Guests (Grand Majlis)</option>
+                <option value="20+ Guests (Corporate / Private Hall)">20+ Guests (Corporate / Private Hall)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="resType" class="form-label">
+                <i class="fa-solid fa-chair" style="color: var(--ancient-gold);"></i> Preferred Seating
+              </label>
+              <select id="resType" class="form-control" required>
+                <option value="Royal Dastarkhwan (Floor Cushions)">Royal Dastarkhwan (Floor Cushions)</option>
+                <option value="Mughal Private Family Pavilion">Mughal Private Family Pavilion</option>
+                <option value="Grand Dining Hall (Formal Chairs)">Grand Dining Hall (Formal Chairs)</option>
+                <option value="Open-Air Garden Terrace">Open-Air Garden Terrace</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="resDate" class="form-label">
+                <i class="fa-solid fa-calendar-days" style="color: var(--ancient-gold);"></i> Reservation Date
+              </label>
+              <input type="date" id="resDate" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="resTime" class="form-label">
+                <i class="fa-solid fa-clock" style="color: var(--ancient-gold);"></i> Preferred Time
+              </label>
+              <select id="resTime" class="form-control" required>
+                <option value="1:00 PM (Lunch Banquet)">1:00 PM (Lunch Banquet)</option>
+                <option value="2:30 PM (Late Lunch)">2:30 PM (Late Lunch)</option>
+                <option value="5:00 PM (High Tea & Karak Chai)">5:00 PM (High Tea & Karak Chai)</option>
+                <option value="7:30 PM (Evening Dawat)">7:30 PM (Evening Dawat)</option>
+                <option value="9:00 PM (Prime Dinner)">9:00 PM (Prime Dinner)</option>
+                <option value="10:30 PM (Late Night Feast)">10:30 PM (Late Night Feast)</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="resNotes" class="form-label">
+                <i class="fa-solid fa-comment-dots" style="color: var(--ancient-gold);"></i> Special Dietary or Occasion Notes
+              </label>
+              <textarea id="resNotes" class="form-control" placeholder="e.g., Live Biryani pot opening at table, low spice for kids, birthday celebration setup..."></textarea>
+            </div>
+
+            <div class="reservation-submit-row">
+              <div class="reservation-note">
+                <i class="fa-solid fa-circle-check" style="color: #27ae60;"></i> Instant confirmation via SMS & WhatsApp
+              </div>
+              <button type="submit" class="btn btn-caramel btn-lg glow-caramel">
+                <i class="fa-solid fa-check"></i> Confirm Reservation
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       GUEST REVIEWS / TESTIMONIALS
+       ========================================================================= -->
+  <section class="section-padding reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="subtitle">Words of Praise</span>
+        <h2 class="title">Honored Guest Experiences</h2>
+        <div class="ornament-divider">
+          <span class="line"></span>
+          <span class="diamond"></span>
+          <span class="icon"><i class="fa-solid fa-star"></i></span>
+          <span class="diamond"></span>
+          <span class="line"></span>
+        </div>
+        <p class="description">
+          Stories and memories shared by food connoisseurs who celebrated their special moments with us.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal-item delay-1">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "The moment we sat down, they served the Karak Chai and leaf biscuits. It immediately transported me to ancestral dawats. The Sindhi Biryani and Nalli Nihari are simply in a league of their own in Pakistan."
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">FK</div>
+            <div class="reviewer-name">
+              <h4>Faraz Kasuri</h4>
+              <p>Karachi • Verified Food Critic</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal-item delay-2">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "The Koyla Karahi cooked in pure desi ghee had that authentic smoky char that is so rare to find nowadays. The private Mughal family pavilion was serene and wonderfully decorated."
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">SM</div>
+            <div class="reviewer-name">
+              <h4>Dr. Shehnaz Malik</h4>
+              <p>Lahore • Family Gathering</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal-item delay-3">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Balochi Sajji was perfectly seasoned with rock salt and roasted until tender while maintaining its juiciness. The Roghani naans are so soft you don't even need teeth! 10/10 dining experience."
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">AZ</div>
+            <div class="reviewer-name">
+              <h4>Asadullah Zafar</h4>
+              <p>Islamabad • Regular Patron</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-col footer-col-brand">
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <div class="logo-crest">
+              <span>S</span>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">Sindri</span>
+              <span class="logo-sub" style="color: var(--ancient-gold-bright);">Restaurant</span>
+            </div>
+          </div>
+          <p class="urdu-text" style="color: var(--ancient-gold-bright); font-size: 1.1rem;">
+            سندھڑی ریستوران — پاکستانی ثقافت اور شاہی کھانوں کا حسین سنگم
+          </p>
+          <p>
+            Preserving the golden culinary treasures of Pakistan with authentic ingredients, genuine recipes, and heartfelt hospitality.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero"><i class="fa-solid fa-angle-right"></i> Entrance Lounge</a></li>
+            <li><a href="#welcome-ritual"><i class="fa-solid fa-angle-right"></i> Welcome Tea Ritual</a></li>
+            <li><a href="#menu"><i class="fa-solid fa-angle-right"></i> Authentic Menu (PKR)</a></li>
+            <li><a href="#heritage"><i class="fa-solid fa-angle-right"></i> Heritage & Spices</a></li>
+            <li><a href="#ambience"><i class="fa-solid fa-angle-right"></i> Dastarkhwan Gallery</a></li>
+            <li><a href="#reservation"><i class="fa-solid fa-angle-right"></i> Reserve Table</a></li>
+          </ul>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="footer-col">
+          <h4>Timings</h4>
+          <ul class="footer-links-list">
+            <li><strong>Lunch Service:</strong><br>12:30 PM – 4:00 PM</li>
+            <li><strong>High Tea & Chai:</strong><br>4:00 PM – 7:00 PM</li>
+            <li><strong>Dinner Dawat:</strong><br>7:30 PM – 1:00 AM</li>
+            <li><strong>Friday Special:</strong><br>Open 1:30 PM – 2:00 AM</li>
+          </ul>
+        </div>
+
+        <!-- Location & Contact -->
+        <div class="footer-col">
+          <h4>Visit & Contact</h4>
+          <div class="footer-contact-list">
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Sindri Heritage Boulevard, Clifton Block 4, Karachi, Pakistan</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+92 21 3587 9000 / +92 300 1234567</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>dawat@sindrirestaurant.pk</span>
+            </div>
+          </div>
+
+          <!-- Newsletter Form -->
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email address" class="newsletter-input" required>
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>Sindri Restaurant</strong>. All Rights Reserved. Crafted with authentic Pakistani pride.
+        </div>
+        <div>
+          100% Halal Certified • All Prices in Pakistani Rupees (PKR / Rs.)
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       DISH QUICK VIEW MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="dishModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="dishModalClose" aria-label="Close Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-body">
+        <div class="modal-image-box">
+          <img src="" alt="" id="modalDishImage">
+        </div>
+        <div class="modal-details">
+          <span class="badge-dusty-pink" id="modalDishTag" style="width: fit-content; margin-bottom: 8px;"></span>
+          <h3 id="modalDishTitle">Dish Name</h3>
+          <div class="urdu-modal-title" id="modalDishUrdu">اردو نام</div>
+
+          <div class="price-row">
+            <span class="price-amount" id="modalDishPrice">Rs. 0</span>
+            <span class="badge-gold" id="modalDishSpice">Spice Level</span>
+          </div>
+
+          <p id="modalDishDesc" style="font-size: 0.95rem; margin-bottom: 12px;"></p>
+
+          <div class="modal-ingredients">
+            <h5>Key Ingredients & Recipe Secret</h5>
+            <p id="modalDishIngredients"></p>
+          </div>
+
+          <div style="margin-bottom: 20px; font-size: 0.88rem; color: var(--color-chocolate-muted);">
+            <strong>Recommended Pairing: </strong> <span id="modalDishPairing"></span>
+          </div>
+
+          <button class="btn btn-caramel" id="modalAddToCartBtn" style="width: 100%;">
+            <i class="fa-solid fa-plus"></i> Add to Dastarkhwan Order
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       CART DRAWER (WITH LIVE PKR CALCULATION)
+       ========================================================================= -->
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Order Cart">
+    <div class="cart-drawer-header">
+      <h3><i class="fa-solid fa-utensils" style="color: var(--ancient-gold);"></i> Your Dastarkhwan</h3>
+      <button class="cart-drawer-close" id="cartCloseBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Items dynamically populated via main.js -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-summary-row">
+        <span>Subtotal (Dishes):</span>
+        <span id="cartSubtotal">Rs. 0</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Sindh/Provincial Tax (16% GST):</span>
+        <span id="cartTax">Rs. 0</span>
+      </div>
+      <div class="cart-summary-row total-row">
+        <span>Total Payable (PKR):</span>
+        <span class="total-amount" id="cartTotal">Rs. 0</span>
+      </div>
+
+      <button class="btn btn-caramel" id="checkoutBtn" style="width: 100%; margin-top: 14px;">
+        <i class="fa-brands fa-whatsapp"></i> Confirm & Send via WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       FLOATING TOAST NOTIFICATION
+       ========================================================================= -->
+  <div class="toast-notice" id="toastNotice">
+    <i class="fa-solid fa-bell"></i>
+    <span id="toastMessage">Welcome to Sindri Restaurant!</span>
+  </div>
+
+  <!-- =========================================================================
+       BACK TO TOP BUTTON
+       ========================================================================= -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
